@@ -4,6 +4,10 @@
 <h1>Home</h1>
 <p> <%= contentHome %></p>
 
+<% newPosts.forEach((newpost)=>{ %>
+    <h3> <%= newpost.title %> </h3>
+    <p> <%= newpost.textarea %> </p>
 
-
+<% }) %>
+        
 <%- include('partials/footer'); -%>
