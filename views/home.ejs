@@ -6,8 +6,7 @@
 
 <% newPosts.forEach((newpost)=>{ %>
     <h3> <%= newpost.title %> </h3>
-    <p> <%= newpost.textarea %> </p>
-
+    <p> <%= newpost.textarea.substring(0,100) + "...." %><a href="/posts/<%=newpost.title%>">Read More</a></p>
 <% }) %>
         
 <%- include('partials/footer'); -%>
